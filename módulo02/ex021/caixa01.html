@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de caixas</title>
+  <style>
+    h1{ /*BOX-LEVEL*/
+      height: 300px;
+      width: 300px;
+      background-color: rgb(195, 246, 229);
+      /*=========BORDER============*/
+      border-width: 10px;
+      border-style: solid;
+      border-color: darkseagreen;
+      /*Forma simplificada - SHORTHANDS 
+      border: 10px solid darkseagreen
+      */
+
+      /*=========PADDING============*/
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left:10px;
+      /*A configuração corre no sentido horário. 
+      Nesta sequência: 
+      TOP
+      RIGTH
+      BOTTOM
+      LEFT*/
+      /*Forma simplificada - SHORTHANDS
+      padding: 10px 10px 10px 10px;
+      quando vc coloca um valor é a mesma coisa para os quatro
+      quando você coloca dois valores o primeiro é o mesmo para a o de cima e o de baixo, e o segundo é o mesmo para o da direita e o da esquerda.
+      */
+
+      /*=========MARGIN============*/
+      margin-top: 20px;
+      margin-right: auto;
+      margin-bottom: 40px;
+      margin-left: auto;
+      /*Forma simplificada - SHORTHANDS
+      margin: 20px 20px 40px 20px;
+      */
+
+      /*=========OUTLINE============*/
+      outline-width: 5px;
+      outline-style: dashed;
+      outline-color:crimson ;
+      /*Forma simplificada - SHORTHANDS
+      outline: 5px dashed crimson;
+      */
+    }
+
+    a{ /*INLINE-LEVEL*/
+      text-decoration: none;
+      border-width: 10px;
+      border-style: solid;
+      border-color: cyan;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de caixa box level</h1>
+  <p>Parágrafos também são exemplo de box level mas os <a href="#">links são exemplos de caixas inline level</a> vamos  ver como tudo isso funciona.</p>
+</body>
+</html>

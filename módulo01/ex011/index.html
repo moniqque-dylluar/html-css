@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:700px )" srcset="imagens/foto-p.png">
+        <source media="(max-width:1000px )" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5.</p>
+
+    <ol>
+        <li>
+            <audio src="midia/happy-mistake.mp3" controls autoplay ></audio><!--Primeira forma de por audio-->
+        </li>
+        <br>
+        <li>
+            <audio preload="metadata" autoplay controls>
+                <!--Segunda forma de colocar audio-->
+               <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+               <source src="midia/happy-mistake.ogg" type="audio/ogg">
+               <source src="midia/happy-mistake.wav" type="audio/wav">
+               <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/happy-mistake.mp3"></a></p>
+               <!--Coloque sempre na ordem. Na parte de cima o seu favorito(MP3)Os demais só serão carregados caso o de cima falhe.Caso todos falhem, criamos um parágrafo que permite o dowload do arquivo MP3 para ouvir no player padrão do dispositivo.-->
+            </audio>
+        </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: cornflowerblue;
+        }
+
+    </style>
+</head>
+<body>
+   <h1>Principais formatações</h1> 
+
+   <h2>Negrito / Destaque</h2>
+   <p>
+       Nessa frase temos um <b>termo em negrito! </b> usando a TAG B (não semântica/ sem significado)
+    </p>
+   <p>
+       Nesta frase, tenho um <strong>termo em destaque!</strong> Usando a TAG STRONG (semântica/com significado)
+    </p> <!--TAG strong =força/peso-->
+   <h2>Itáico / Ênfase </h2>
+   <p>
+       Nesta frase, temos um <i>termo em itálico!</i> Usando a TAG I (não semântica/ sem significado)
+    </p>
+   <p> 
+       Nesta frase temos um <em>termo em ênfase!</em> Usando a TAG EM (semântica/ com significado)
+    </p>
+    <h2>Texto marcado </h2>
+    <p>
+        Podemos também usar um <mark>texto marcado</mark> usando a tag MARK
+        <!--usando a TAG (<mark style="background-color:...) ele marca aquele texto exclusivo"-->
+    </p>
+    <p>
+        E num outro parágrafo temos outro <mark>texto marcado</mark> no final
+        <!--Agora usando o CSS você pode configurar geral todos os marcadores. Em HEAD abra uma tag STYLE e configure o marcador para a cor desejada como demosntrado acima.--> 
+    </p>
+   <h2>Texto Grande e Pequeno</h2>
+   <p>
+       Estamos criando um texto <big>grande</big> e um texto <small>pequeno</small> neste parágrafo
+       <!--A tag BIG não é mais usada na Html porém a tag small permanece, talvez por que letras pequenas podem ter sentido(ex: letras pequenas de um contrato).Você consegue alterar o tmanho das letras com o CSS.-->
+   </p>
+   <h2>Texto deletado</h2>
+   <p>
+       Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido mas não considerado
+   </p>
+   <h2>Texto inserido</h2>
+   <p>
+       Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. <br> (Semântica)
+       Existe também o <u>sublinhado</u> coma tag U (Não semântica)
+   </p>
+   <h2>Texto sobrescrito</h2>
+   <p>
+       Para inserir coisa do tipo x<sup>20</sup>+3
+   </p>
+   <h2>Texto subscrito</h2>
+   <p>
+       Para inserir coisas do tipo H<sub>2</sub>O
+   </p>
+</body>
+</html>
